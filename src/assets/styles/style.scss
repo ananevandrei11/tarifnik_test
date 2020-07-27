@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Regular.ttf") format("ttf"),
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style-position: outside;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 3.75rem;
+  display: flex;
+  background-color: rgba(251, 250, 249, 0.8);
+}
+@import "nav.scss";
+
+
