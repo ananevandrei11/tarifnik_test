@@ -1,7 +1,6 @@
 <template>
-  <div class="home">
-    sefsddsgsdgsdfg
-  </div>
+  <section id="order" class="order">
+  </section>
 </template>
 
 <script>
@@ -9,7 +8,7 @@
 //import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
-  name: "Home",
+  name: "order",
   components: {
     
   }

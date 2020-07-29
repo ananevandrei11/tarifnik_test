@@ -1,7 +1,7 @@
 <template>
   <nav class="header-nav">
     <figure class="header-logo">
-      <img :src="svgLogo" alt="logo" @click="routToHome()">
+      <img :src="svgLogo" alt="logo">
     </figure>
 
     <ul class="header-menu header-menu__list" v-if="showMenu" @mouseleave="closeMenu()">
@@ -47,9 +47,6 @@ export default {
     }
   },
   methods: {
-    routToHome() {
-      this.$router.push("/");
-    },
     doCall() {
       let btn = document.querySelector(".header-btn")
       let linkBtn = btn.querySelector("a");

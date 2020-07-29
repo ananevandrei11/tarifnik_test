@@ -4,20 +4,23 @@
       <Nav />
     </header>
     <main>
-      <router-view></router-view>
+      <Order />
+      <Tarifs />
     </main>
-    <footer>
-      asdsa
-    </footer>
   </div>
 </template>
 
 <script>
 import Nav from "./components/Nav";
+import Order from "./views/Order";
+import Tarifs from "./views/Tarifs";
+
   export default {
   name: "app",
   components: {
-    Nav
+    Nav,
+    Order,
+    Tarifs
   }
 };
 </script>

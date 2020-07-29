@@ -2,6 +2,10 @@
   font-family: 'Open Sans';
   src: url("../fonts/OpenSans-Regular.ttf") format("ttf"),
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.ttf") format("ttf"),
+}
 
 * {
   margin: 0;
@@ -9,6 +13,10 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 button {
@@ -37,6 +45,14 @@ header {
   display: flex;
   background-color: rgba(251, 250, 249, 0.8);
 }
+
+main {
+  display: grid;
+  grid-template-rows: 100vh 75%;
+  grid-template-columns: 100vw;
+}
 @import "nav.scss";
+@import "order.scss";
+@import "tarifs.scss";
 
 
