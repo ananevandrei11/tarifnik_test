@@ -47,10 +47,6 @@ export default {
   name: "Tarifs",
   data: () => {
     return {
-      // tarifs: {
-      //   id: 0, name: "Title", speed: 100, channels_count: 140, hd_channels_count:23, price: 899,
-      // },
-
       logoSpeed: iconWebGray,
       logoTV: iconTVGray,
     }

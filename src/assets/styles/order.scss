@@ -1,4 +1,101 @@
 .order {
   background: url("../images/laptop-desk-macbook-apple-table-floor-99193-pxhere.jpg") no-repeat;
   background-size: cover;
+  display: grid;
+  grid-template-columns: minmax(300px, 750px);
+  align-items: center;
+  justify-content: center;
+
+  &-form {
+    height: 389px;
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-content: space-around;
+    background: #E1F1FF;
+    border-radius: 20px;
+    text-align: center;
+
+    h3 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    input,
+    label,
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 16px;
+    }
+
+    &__type {
+      display: flex;
+      justify-content: space-around;
+      font-weight: normal;
+      input {
+        display: none;
+      }
+      label {
+        position: relative;
+      }
+      label:before {
+        position: absolute;
+        content: "";
+        top: 1.5px;
+        left: -15px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #000000;
+        border-radius: 50%;
+      }
+      input:checked+label:after {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: -12px;
+        width: 6px;
+        height: 6px;
+        background-color: #000000;
+        border-radius: 50%;
+      }
+    }
+
+    &__data {
+      display: grid;
+      grid-row-gap: 10%;
+
+      input {
+        width: 100%;
+        height: 30px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        border: none;
+        padding-left: 2.5%;
+      }
+
+      input::placeholder {
+        color: #C4C4C4;
+      }
+    }
+
+    p {
+      line-height: 14px;
+      text-align: left;
+    }
+
+    button {
+      width: 198.68px;
+      height: 40px;
+      background: #3343E1;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+  }
 }
